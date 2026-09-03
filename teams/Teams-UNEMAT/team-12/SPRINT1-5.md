@@ -35,13 +35,11 @@ Nesta Sprint 1/5, o foco é exclusivamente o **planejamento do banco de dados**.
 
 **Nome completo:**
 
-> Preencha aqui.
+> João Guilherme Barros de Lima.
 
 **Nome escolhido para o banco de dados:**
 
-```text
-
-```
+```Real-states-database```
 
 ---
 
@@ -73,7 +71,7 @@ Alguns exemplos:
 
 ### Tema escolhido
 
-> Escreva aqui.
+> Site de anúncios imobiliários.
 
 ---
 
@@ -90,8 +88,10 @@ A descrição deve responder:
 
 ### Descrição
 
-> Escreva aqui.
-
+> Esse é um sistema de anúncios de imóveis que será utilizado por corretores que queiram anunciar seu imóvel de forma fácil e rápida e por pessoas que estejam procurando imoveis para alugar ou comprar.
+> O sistema será como um cardápio de imóveis sendo anunciados na pagina principal. Esse sistema contaram com informações como: titulo, valor, localização, quantidade de cômodos, imagens e um cadastro único e distinto de corretor e cliente armazenados em um banco de dados feito pelo MySQL.
+> O sistema permitirá realizar um cadastro autenticado por e-mail. 
+>
 ---
 
 # 4. Objetivo do banco de dados
@@ -100,7 +100,7 @@ Explique qual é o principal objetivo do banco de dados proposto.
 
 ### Objetivo
 
-> Escreva aqui.
+> Armazenar os dados dos imoveis, corretores e clientes de forma segura.
 
 ---
 
@@ -112,11 +112,11 @@ Liste as principais funcionalidades ou informações que deverão ser contemplad
 
 ### O banco deverá permitir:
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Cadastrar, alterar e excluir perfis de corretores e clientes.
+2. Cadastrar imóveis com seus respectivos detalhes (valor, cômodos, localização).
+3. Associar cada imóvel cadastrado a um corretor responsável.
+4. Permitir que clientes demosntrem interesse/agendem uma visita para um imóvel específico.
+5. Listar todos os imóveis disponíveis no "cardápio" principal.
 
 ---
 
