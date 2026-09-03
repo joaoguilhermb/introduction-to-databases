@@ -150,10 +150,10 @@ Pagamento
 
 | Nº | Entidade | O que representa? |
 |---:|---|---|
-| 1 |  |  |
-| 2 |  |  |
-| 3 |  |  |
-| 4 |  |  |
+| 1 | imovel | Representa o anúncio em si, contendo as características do local (valor, cômodos, localização). |
+| 2 | cliente | Armazena os dados dos usuários comuns que acessarão o sistema para buscar imóveis. |
+| 3 | corretor | Armazena os dados dos profissionais que criarão e gerenciarão os anúncios. |
+| 4 | interesse | Representa a intenção de visita, ligando o cliente interessado ao imóvel anunciado. |
 | 5 |  |  |
 | 6 |  |  |
 
@@ -169,49 +169,49 @@ Para cada entidade, identifique os principais atributos que deverão ser armazen
 
 **Nome da entidade:**
 
-```text
+```Imovel
 
 ```
 
 | Atributo | Informação armazenada | Tipo de dado previsto | Obrigatório? |
 |---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| id_imovel | identificador único do anúncio | int | sim |
+| id_corretor | identificador de qual corretor é o dono do anúncio | int | sim |
+| titulo | chamada do anúncio (ex: "Casa com 3 quartos") | varchar | sim |
+| valor | preço do imóvel para venda ou aluguel | decimal | sim |
+| qunatidade_comodos | número total de cômodos do imóvel | int | sim |
 
 ## Entidade 2
 
 **Nome da entidade:**
 
-```text
+```Cliente
 
 ```
 
 | Atributo | Informação armazenada | Tipo de dado previsto | Obrigatório? |
 |---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| id_cliente | Identificador único do cliente | int | sim |
+| nome | Nome completo do cliente | varchar | sim |
+| email | E-mail usado no cadastro e login | varchar | sim |
+| senha | Senha de acesso ao sistema | varchar | sim |
+| telefone | Número de contato do cliente | varchar | sim |
 
 ## Entidade 3
 
 **Nome da entidade:**
 
-```text
+```Corretor
 
 ```
 
 | Atributo | Informação armazenada | Tipo de dado previsto | Obrigatório? |
 |---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| id_corretor | Identificador único do corretor | int | sim |
+| nome | Nome completo do corretor | varchar | sim |
+| creci | Número de registro do corretor (documento) | varchar | sim |
+| email | E-mail para acesso ao sistema | varchar | sim |
+| telefone | Número de contato celular/WhatsApp | varchar | sim |
 
 ## Entidade 4
 
